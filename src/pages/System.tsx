@@ -39,9 +39,9 @@ const System = () => {
 
   // Mock data for mines
   const mines = [
-    { id: '1', name: 'Thunder Creek Mine', location: 'Colorado, USA' },
-    { id: '2', name: 'Iron Ridge Quarry', location: 'Montana, USA' },
-    { id: '3', name: 'Copper Valley Mine', location: 'Arizona, USA' },
+    { id: '1', name: 'Gevra coal mine', location: 'Korba, Chhattisgarh, India' },
+    { id: '2', name: 'Koraput bauxite mine', location: 'Koraput, Odisha, India' },
+    { id: '3', name: 'Singhbhum copper mine', location: 'Singhbhum, Jharkhand, India' },
   ];
 
   // Mock data for zones
@@ -613,3 +613,4 @@ const System = () => {
 };
 
 export default System;
+
