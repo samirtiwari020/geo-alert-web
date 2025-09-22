@@ -57,6 +57,37 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Mining system colors
+        mining: {
+          earth: "hsl(var(--mining-earth))",
+          rock: "hsl(var(--mining-rock))",
+          metal: "hsl(var(--mining-metal))",
+        },
+        safety: {
+          critical: "hsl(var(--safety-critical))",
+          warning: "hsl(var(--safety-warning))",
+          caution: "hsl(var(--safety-caution))",
+          safe: "hsl(var(--safety-safe))",
+          info: "hsl(var(--safety-info))",
+        },
+        risk: {
+          "very-high": "hsl(var(--risk-very-high))",
+          high: "hsl(var(--risk-high))",
+          medium: "hsl(var(--risk-medium))",
+          low: "hsl(var(--risk-low))",
+          "very-low": "hsl(var(--risk-very-low))",
+        },
+      },
+      backgroundImage: {
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-danger': 'var(--gradient-danger)',
+        'gradient-warning': 'var(--gradient-warning)',
+        'gradient-safe': 'var(--gradient-safe)',
+      },
+      boxShadow: {
+        'mining': 'var(--shadow-mining)',
+        'alert': 'var(--shadow-alert)',
+        'glow': 'var(--shadow-glow)',
       },
       borderRadius: {
         lg: "var(--radius)",

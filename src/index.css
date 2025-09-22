@@ -2,41 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Industrial Mining System Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 13% 8%;
+    --foreground: 220 13% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 13% 10%;
+    --card-foreground: 220 13% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 13% 10%;
+    --popover-foreground: 220 13% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 220 13% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 13% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 13% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 43 96% 56%;
+    --accent-foreground: 220 13% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 13% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 15%;
+    --input: 220 13% 15%;
+    --ring: 25 95% 53%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Mining-specific colors */
+    --mining-earth: 25 85% 35%;
+    --mining-rock: 30 25% 25%;
+    --mining-metal: 200 15% 45%;
+    
+    /* Safety colors */
+    --safety-critical: 0 84% 60%;
+    --safety-warning: 43 96% 56%;
+    --safety-caution: 45 93% 47%;
+    --safety-safe: 142 76% 36%;
+    --safety-info: 217 91% 60%;
+    
+    /* Risk levels */
+    --risk-very-high: 0 84% 60%;
+    --risk-high: 15 90% 55%;
+    --risk-medium: 43 96% 56%;
+    --risk-low: 60 90% 50%;
+    --risk-very-low: 142 76% 36%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--mining-earth)), hsl(var(--primary)));
+    --gradient-danger: linear-gradient(135deg, hsl(var(--safety-critical)), hsl(15 90% 55%));
+    --gradient-warning: linear-gradient(135deg, hsl(var(--safety-warning)), hsl(45 93% 47%));
+    --gradient-safe: linear-gradient(135deg, hsl(var(--safety-safe)), hsl(120 60% 50%));
+    
+    /* Shadows */
+    --shadow-mining: 0 10px 30px -10px hsl(var(--mining-earth) / 0.3);
+    --shadow-alert: 0 0 30px hsl(var(--safety-critical) / 0.5);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.4);
 
     --sidebar-background: 0 0% 98%;
 
